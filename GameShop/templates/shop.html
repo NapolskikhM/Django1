@@ -1,0 +1,17 @@
+{% extends 'menu.html'%}
+
+{% block title %}Магазин{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    <br>
+    <ul>
+        {% for i in games %}
+            <li>{{i}}<button>{{buy}}</button></li>
+        {% endfor%}
+    </ul>
+    <br>
+{% endblock %}
